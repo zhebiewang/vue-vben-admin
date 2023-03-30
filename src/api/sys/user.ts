@@ -2,13 +2,12 @@ import { defHttp } from '/@/utils/http/axios';
 import { LoginParams, LoginResultModel, GetUserInfoModel } from './model/userModel';
 
 import { ErrorMessageMode } from '/#/axios';
-
 enum Api {
   Login = '/login',
   Logout = '/logout',
-  GetUserInfo = '/getUserInfo',
-  GetPermCode = '/getPermCode',
-  TestRetry = '/testRetry',
+  GetUserInfo = '/get_user_info',
+  GetPermCode = '/get_perm_code',
+  TestRetry = '/test_retry',
 }
 
 /**
