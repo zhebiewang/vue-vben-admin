@@ -4,11 +4,9 @@
 <script lang="ts" setup>
   import { BasicForm, useForm } from '/@/components/Form';
   import { renderLtpResult, schemas } from './data';
-  import { useMessage } from '/@/hooks/web/useMessage';
-  import { postLtpTask } from '../../../../api/ltp/ltp';
+  import { postLtpTask } from '/@/api/ltp/ltp';
 
-  const { createMessage } = useMessage();
-  const [register, { validate, setProps, setFieldsValue }] = useForm({
+  const [register, { validate, setFieldsValue }] = useForm({
     labelCol: {
       span: 8,
     },
